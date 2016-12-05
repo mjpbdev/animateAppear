@@ -1,35 +1,222 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <title>Animateappear by mjpbdev</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="vendor/google-code-prettify/prettify.css" media="screen">
+    <script src="vendor/google-code-prettify/prettify.js"></script>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-  </head>
-  <body>
+    <link rel="stylesheet" type="text/css" href="stylesheets/animate_appear.min.css" media="screen">
+</head>
+<body>
     <section class="page-header">
-      <h1 class="project-name">Animateappear</h1>
-      <h2 class="project-tagline"></h2>
-      <a href="https://github.com/mjpbdev/animateAppear" class="btn">View on GitHub</a>
-      <a href="https://github.com/mjpbdev/animateAppear/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/mjpbdev/animateAppear/tarball/master" class="btn">Download .tar.gz</a>
+        <h1 class="project-name">AnimateAppear</h1>
+        <h2 class="project-tagline"></h2>
+        <a href="https://github.com/mjpbdev/animateAppear" class="btn">View on GitHub</a>
+        <a href="https://github.com/mjpbdev/animateAppear/zipball/master" class="btn">Download .zip</a>
+        <a href="https://github.com/mjpbdev/animateAppear/tarball/master" class="btn">Download .tar.gz</a>
     </section>
-
     <section class="main-content">
-      <h1>
-<a id="hello-world" class="anchor" href="#hello-world" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Hello World</h1>
+        <h1><a id="hello-world" class="anchor" href="#hello-world" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Animate Appear</h1>
+        <p>It's a Plugin that animate elements when scrolled them into view, using animations from <a href="https://github.com/daneden/animate.css" target="_blank">Animate.css</a> and the appear function from <a href="https://github.com/bas2k/jquery.appear/" target="_blank">jQuery Appear</a> plugin.</p>
+        <h3>Fade</h3>
+        <div class="row">
+            <div class="col-sm-4">
+                <img id="img-1" data-animation-name="fadeInLeft" src="images/animateAppear.jpg" alt="" />
+            </div>
+            <div class="col-sm-8">
+                <div class="mt-md">
+                    <button class="btn btn-animate" data-img="img-1" data-animate-class="fadeIn">fadeIn</button>
+                    <button class="btn btn-animate" data-img="img-1" data-animate-class="fadeInDown">fadeInDown</button>
+                    <button class="btn btn-animate" data-img="img-1" data-animate-class="fadeInDownBig">fadeInDownBig</button>
+                    <button class="btn btn-animate" data-img="img-1" data-animate-class="fadeInLeft">fadeInLeft</button>
+                    <button class="btn btn-animate" data-img="img-1" data-animate-class="fadeInLeftBig">fadeInLeftBig</button>
+                    <button class="btn btn-animate" data-img="img-1" data-animate-class="fadeInRight">fadeInRight</button>
+                    <button class="btn btn-animate" data-img="img-1" data-animate-class="fadeInRightBig">fadeInRightBig</button>
+                    <button class="btn btn-animate" data-img="img-1" data-animate-class="fadeInUp">fadeInUp</button>
+                    <button class="btn btn-animate" data-img="img-1" data-animate-class="fadeInUpBig">fadeInUpBig</button>
+                </div>
+            </div>
+        </div>
+        <h3>Bounce</h3>
+        <div class="row">
+            <div class="col-sm-4">
+                <img id="img-2" data-animation-name="bounceInLeft" src="images/animateAppear.jpg" alt="" />
+            </div>
+            <div class="col-sm-8">
+                <div class="mt-md">
+                    <button class="btn btn-animate" data-img="img-2" data-animate-class="bounceIn">bounceIn</button>
+                    <button class="btn btn-animate" data-img="img-2" data-animate-class="bounceInDown">bounceInDown</button>
+                    <button class="btn btn-animate" data-img="img-2" data-animate-class="bounceInLeft">bounceInLeft</button>
+                    <button class="btn btn-animate" data-img="img-2" data-animate-class="bounceInRight">bounceInRight</button>
+                    <button class="btn btn-animate" data-img="img-2" data-animate-class="bounceInUp">bounceInUp</button>
+                </div>
+            </div>
+        </div>
+        <h3>Rotate</h3>
+        <div class="row">
+            <div class="col-sm-4">
+                <img id="img-3" data-animation-name="rotateIn" src="images/animateAppear.jpg" alt="" />
+            </div>
+            <div class="col-sm-8">
+                <div class="mt-md">
+                    <button class="btn btn-animate" data-img="img-3" data-animate-class="rotateIn">rotateIn</button>
+                    <button class="btn btn-animate" data-img="img-3" data-animate-class="rotateInDownLeft">rotateInDownLeft</button>
+                    <button class="btn btn-animate" data-img="img-3" data-animate-class="rotateInDownRight">rotateInDownRight</button>
+                    <button class="btn btn-animate" data-img="img-3" data-animate-class="rotateInUpLeft">rotateInUpLeft</button>
+                    <button class="btn btn-animate" data-img="img-3" data-animate-class="rotateInUpRight">rotateInUpRight</button>
+                </div>
+            </div>
+        </div>
+        <h3>Zoom</h3>
+        <div class="row">
+            <div class="col-sm-4">
+                <img id="img-4" data-animation-name="zoomIn" src="images/animateAppear.jpg" alt="" />
+            </div>
+            <div class="col-sm-8">
+                <div class="mt-md">
+                    <button class="btn btn-animate" data-img="img-4" data-animate-class="zoomIn">zoomIn</button>
+                    <button class="btn btn-animate" data-img="img-4" data-animate-class="zoomInDown">zoomInDown</button>
+                    <button class="btn btn-animate" data-img="img-4" data-animate-class="zoomInLeft">zoomInLeft</button>
+                    <button class="btn btn-animate" data-img="img-4" data-animate-class="zoomInRight">zoomInRight</button>
+                    <button class="btn btn-animate" data-img="img-4" data-animate-class="zoomInUp">zoomInUp</button>
+                </div>
+            </div>
+        </div>
+        <h3>Slide</h3>
+        <div class="row">
+            <div class="col-sm-4">
+                <img id="img-5" data-animation-name="slideInLeft" src="images/animateAppear.jpg" alt="" />
+            </div>
+            <div class="col-sm-8">
+                <div class="mt-md">
+                    <button class="btn btn-animate" data-img="img-5" data-animate-class="slideInDown">slideInDown</button>
+                    <button class="btn btn-animate" data-img="img-5" data-animate-class="slideInLeft">slideInLeft</button>
+                    <button class="btn btn-animate" data-img="img-5" data-animate-class="slideInRight">slideInRight</button>
+                    <button class="btn btn-animate" data-img="img-5" data-animate-class="slideInUp">slideInUp</button>
+                </div>
+            </div>
+        </div>
+        <h3>Flip</h3>
+        <div class="row">
+            <div class="col-sm-4">
+                <img id="img-6" data-animation-name="flipInX" src="images/animateAppear.jpg" alt="" />
+            </div>
+            <div class="col-sm-8">
+                <div class="mt-md">
+                    <button class="btn btn-animate" data-img="img-6" data-animate-class="flipInX">flipInX</button>
+                    <button class="btn btn-animate" data-img="img-6" data-animate-class="flipInY">flipInY</button>
+                </div>
+            </div>
+        </div>
+        <h3>Various</h3>
+        <div class="row">
+            <div class="col-sm-4">
+                <img id="img-7" data-animation-name="swing" src="images/animateAppear.jpg" alt="" />
+            </div>
+            <div class="col-sm-8">
+                <div class="mt-md">
+                    <button class="btn btn-animate" data-img="img-7" data-animate-class="bounce">bounce</button>
+                    <button class="btn btn-animate" data-img="img-7" data-animate-class="flash">flash</button>
+                    <button class="btn btn-animate" data-img="img-7" data-animate-class="pulse">pulse</button>                    
+                    <button class="btn btn-animate" data-img="img-7" data-animate-class="rubberBand">rubberBand</button>
+                    <button class="btn btn-animate" data-img="img-7" data-animate-class="shake">shake</button>
+                    <button class="btn btn-animate" data-img="img-7" data-animate-class="headShake">headShake</button>
+                    <button class="btn btn-animate" data-img="img-7" data-animate-class="swing">swing</button>
+                    <button class="btn btn-animate" data-img="img-7" data-animate-class="tada">tada</button>
+                    <button class="btn btn-animate" data-img="img-7" data-animate-class="wobble">wobble</button>
+                    <button class="btn btn-animate" data-img="img-7" data-animate-class="jello">jello</button>
+                    <button class="btn btn-animate" data-img="img-7" data-animate-class="lightSpeedIn">lightSpeedIn</button>
+                    <button class="btn btn-animate" data-img="img-7" data-animate-class="rollIn">rollIn</button>
+                </div>
+            </div>
+        </div>
+<br>
 
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/mjpbdev/animateAppear">Animateappear</a> is maintained by <a href="https://github.com/mjpbdev">mjpbdev</a>.</span>
+<h1>Getting started</h1>
 
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
+<p class="mt-lg">1. Include the <span class="highlight">js</span> and <span class="highlight">css</span> files of <b>AnimateAppear</b> plugin in to your project, you will also need to include <a href="http://jquery.com/" target="_blank">jQuery</a></p>
 
+<pre class="prettyprint lang-html linenums">
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;animateAppear/css/animate_appear.min.css&quot;&gt;
+&lt;script src=&quot;animateAppear/js/animate_appear.min.js&quot;&gt;&lt;/script&gt;
+</pre>
+
+
+<p class="mt-lg">2. Add to the element to be animate the property <b>data-animation-name</b> and the name of the animation </p>
+
+<pre class="prettyprint lang-html linenums">
+&lt;img data-animation-name="[animation name]" src="image.jpg" /&gt;
+</pre>
+
+<p class="mt-lg">3. Initialize <b>AnimateAppear</b> </p>
+
+<pre class="prettyprint lang-html linenums">
+&lt;script&gt;
+  $(function(){
+    $('[data-animation-name]').animateAppear();
+  });
+&lt;/script&gt;
+</pre>
+
+<p> You are ready!</p>
+
+<h1>Options</h1>
+<h3><b>Delay</b></h3>
+<p>It can be changed the time when the element appear on the view with <b>data-animation-delay</b>. By default it's 1 second.</p>
+<p>Per element</p>
+<pre class="prettyprint lang-html linenums">
+&lt;img data-animation-name="fadeIn" data-animation-delay="2" src="image.jpg" /&gt;
+</pre>
+<p>In the initialization for all the elements</p>
+<pre class="prettyprint lang-html linenums">
+&lt;script&gt;
+  $(function(){
+    $('[data-animation-name]').animateAppear({delay:2});
+  });
+&lt;/script&gt;
+</pre>
+
+<h3><b>Accuracy</b></h3>
+<p>The appear function from <a href="https://github.com/bas2k/jquery.appear/" target="_blank">jQuery Appear</a> plugin receive two parameter <b>accX</b> and <b>accY</b> they can be set in the call to <b>animateAppear</b></p>
+
+<pre class="prettyprint lang-html linenums">
+&lt;script&gt;
+  $(function(){
+    $('[data-animation-name]').animateAppear({accX:0, accY:-150});
+  });
+&lt;/script&gt;
+</pre>
+
+<p><b>animateAppear</b> has by default <b>accX:0</b> and <b>accY:-100</b>. It means that the element has to be 100px into the view to appear.</p>
+
+<hr>
+<h2><b>License</b></h2>
+<p>The MIT License (MIT) <br><br>
+
+Copyright (c) 2016 mjpbDev <br><br>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: <br><br>
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. <br><br>
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+        <footer class="site-footer">
+            <span class="site-footer-owner"><a href="https://github.com/mjpbdev/animateAppear">AnimateAppear</a> is maintained by <a href="https://github.com/mjpbdev">mjpbdev</a>.</span>
+            <span class="site-footer-credits">This page was partly generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+        </footer>
     </section>
+    <script src="vendor/jquery/jquery-1.12.3.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/animate_appear.min.js"></script>
+    <script src="js/demo.min.js"></script>
 
-  
-  </body>
+</body>
+
 </html>

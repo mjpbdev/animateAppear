@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box; }
 
+html{
+  font-size: 16px;
+}
 body {
   padding: 0;
   margin: 0;
@@ -34,6 +37,8 @@ a {
   background-color: rgba(255, 255, 255, 0.2);
   border-color: rgba(255, 255, 255, 0.3); }
 
+
+
 @media screen and (min-width: 64em) {
   .btn {
     padding: 0.75rem 1rem; } }
@@ -52,8 +57,8 @@ a {
     .btn + .btn {
       margin-top: 1rem;
       margin-left: 0; } }
-
 .page-header {
+  margin: 0px;
   color: #fff;
   text-align: center;
   background-color: #159957;
@@ -72,6 +77,7 @@ a {
     padding: 2rem 1rem; } }
 
 .project-name {
+  font-weight: bold;
   margin-top: 0;
   margin-bottom: 0.1rem; }
 
@@ -104,10 +110,12 @@ a {
   .project-tagline {
     font-size: 1rem; } }
 
-.main-content :first-child {
+.main-content h1:first-child {
   margin-top: 0; }
 .main-content img {
-  max-width: 100%; }
+  max-width: 150px; 
+display: block;
+margin:auto;}
 .main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 {
   margin-top: 2rem;
   margin-bottom: 1rem;
@@ -142,10 +150,9 @@ a {
     background: transparent;
     border: 0; }
 .main-content .highlight {
-  margin-bottom: 1rem; }
-  .main-content .highlight pre {
-    margin-bottom: 0;
-    word-break: normal; }
+  color:#159957;
+  font-weight: bold; }
+
 .main-content .highlight pre, .main-content pre {
   padding: 0.8rem;
   overflow: auto;
@@ -203,6 +210,29 @@ a {
   background-color: #eff0f1;
   border: 0; }
 
+
+  .main-content .btn{
+        border-color: #15648b;
+    color: #15648b;
+    padding: 0.50rem 0.7rem;
+    margin: 0px 0px 5px 0px;
+  }
+
+  .main-content .btn:hover{
+
+    background: #15648b;
+    color: #ffffff;
+  }
+
+.mt-sm{
+  margin-top: 10px;
+}
+.mt-md{
+  margin-top: 20px;
+}
+.mt-lg{
+  margin-top: 30px;
+}
 @media screen and (min-width: 64em) {
   .main-content {
     max-width: 64rem;
@@ -218,7 +248,8 @@ a {
 @media screen and (max-width: 42em) {
   .main-content {
     padding: 2rem 1rem;
-    font-size: 1rem; } }
+    font-size: 1rem; }
+}
 
 .site-footer {
   padding-top: 2rem;
