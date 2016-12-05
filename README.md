@@ -11,7 +11,10 @@ It's a Plugin that animate elements when scrolled them into view, using animatio
 <link rel="stylesheet" type="text/css" href="animateAppear/css/animate_appear.min.css">
 <script src="animateAppear/js/animate_appear.min.js"></script>
 ```
-
+Or with Bower, simply do the following:
+```html
+$ bower install animateAppear --save
+```
 2\. Add to the element to be animate the property **data-animation-name** and the name of the animation
 ```html
 <img data-animation-name="[animation name]" src="image.jpg" />
