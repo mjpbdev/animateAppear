@@ -1,0 +1,30 @@
+{
+  "name": "animateAppear",
+  "homepage": "https://github.com/mjpbdev/animateAppear",
+  "authors": [
+    "mjpbdev <mjpbdev@gmail.com>"
+  ],
+  "description": "animate element when appear into view",
+  "main": [
+    "js/animate_appear.min.js",
+    "js/animate_appear.js",
+    "css/animate_appear.min.css",
+    "css/animate_appear.css"
+  ],
+  "keywords": [
+    "animate",
+    "appear",
+    "scroll"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": ">= 1.12.0"
+  }
+}
