@@ -7,7 +7,7 @@
   "description": "animate element when appear into view",
   "main": [
     "js/animate_appear.min.js",
-    "css/animate_appear.min.css",
+    "css/animate_appear.min.css"
   ],
   "keywords": [
     "animate",
