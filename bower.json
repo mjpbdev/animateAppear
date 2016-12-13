@@ -1,13 +1,13 @@
 {
-  "name": "animateAppear",
-  "homepage": "https://github.com/mjpbdev/animateAppear",
+  "name": "animateappear",
+  "homepage": "https://github.com/mjpbdev/animateappear",
   "authors": [
     "mjpbdev <mjpbdev@gmail.com>"
   ],
   "description": "animate element when appear into view",
   "main": [
-    "js/animate_appear.min.js",
-    "css/animate_appear.min.css"
+    "js/animate_appear.js",
+    "css/animate_appear.css"
   ],
   "keywords": [
     "animate",
